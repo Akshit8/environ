@@ -1,5 +1,7 @@
 # environ
 
+[![codecov](https://codecov.io/gh/Akshit8/environ/branch/main/graph/badge.svg?token=DK9XSIA03T)](https://codecov.io/gh/Akshit8/environ)
+
 a simple package to inject environment variables into golang structs
 
 ## Quickstart
