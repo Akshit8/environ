@@ -1,0 +1,22 @@
+linters-settings:
+  cyclop:
+    max-complexity: 15
+
+linters:
+  disable-all: true
+  enable:
+    - deadcode
+    - errcheck
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
+    - structcheck
+    - typecheck
+    - unused 
+    - varcheck
+    - goimports
+    - cyclop
+    - errname
+    - errorlint
+    - misspell
