@@ -1,10 +1,3 @@
-# environ
-
-a simple package to inject environment variables into golang structs
-
-## Quickstart
-
-```go
 package main
 
 import (
@@ -41,4 +34,3 @@ func main() {
 
 	fmt.Printf("%+v", config)
 }
-```

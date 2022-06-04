@@ -1,4 +1,4 @@
-package envriron
+package environ
 
 import (
 	"fmt"
