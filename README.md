@@ -4,6 +4,12 @@
 
 a simple package to inject environment variables into golang structs
 
+## Installation
+
+```
+go get -u github.com/Akshit8/environ
+```
+
 ## Quickstart
 
 ```go
