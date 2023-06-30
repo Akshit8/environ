@@ -6,13 +6,8 @@ import (
 )
 
 const (
-	// NilParser is returned when a nil parser is passed to UseParser.
-	NilParser = "cannot pass nil as arg to UseParser"
-
-	// InvalidArgument is returned when the parser function passed to UseParser does not have the correct signature.
-	InvalidArgument = "parser must take a single string as an argument"
-
-	// InvalidReturnType is returned when the parser function passed to UseParser does not have the correct return type.
+	NilParser         = "cannot pass nil as arg to UseParser"
+	InvalidArgument   = "parser must take a single string as an argument"
 	InvalidReturnType = "parser return type must be T or (T, error)"
 )
 
@@ -22,8 +17,6 @@ var (
 	errorType = reflect.TypeOf((*error)(nil)).Elem()
 )
 
-// UseParser registers a parser for the given type.
-// once registered, the parser will be automatically used by Inject.
 func UseParser(parser interface{}) {
 	if parser == nil {
 		panic(NilParser)

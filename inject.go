@@ -9,8 +9,6 @@ import (
 
 const structTag = "environ"
 
-// Inject will populate the fields of the given struct with values from the environment.
-// the struct fields must be tagged with the "environ" tag.
 func Inject(holder interface{}) error {
 	hPtr := reflect.TypeOf(holder)
 
